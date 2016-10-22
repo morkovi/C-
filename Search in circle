@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Four_Digit_Number
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            do
+            {
+                Console.WriteLine("Checks if given point (x, y) is inside a circle K({0, 0}, 2)");
+                double x = Convert.ToDouble(Console.ReadLine());
+                double y = Convert.ToDouble(Console.ReadLine());
+                bool result = Math.Sqrt(Math.Pow(x,2) + Math.Pow(y,2))<2;
+                Console.WriteLine("{0}\n", result);
+
+
+
+            } while (true);
+        }
+    }
+}
