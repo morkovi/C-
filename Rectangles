@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Rectangles
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            do
+            {
+                Console.WriteLine("You have to write width and height of rectangle");
+                int Width = Convert.ToInt32(Console.ReadLine());
+                int Height = Convert.ToInt32(Console.ReadLine());
+                int Perimeter = 2 * Width + 2 * Height;
+                int Area = Width * Height;
+                Console.WriteLine("Perimetar is {0}", Perimeter);
+                Console.WriteLine("Area is {0} \n", Area);
+            } while (true);
+        }
+    }
+}
