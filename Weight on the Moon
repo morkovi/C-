@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Weight_on_the_Moon
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("The application will calculate your weight on the moon");
+            Console.WriteLine("what is your weight");
+            do
+            {
+                int PersonWeight = Convert.ToInt32(Console.ReadLine());
+                double WeightOnMoon = PersonWeight * 0.17;
+                Console.WriteLine("Your weight on the Moon will be {0}", WeightOnMoon);
+
+
+            } while (true);
+        }
+    }
+}
