@@ -1,0 +1,44 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Prime_Number_Check
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Prime Number Check");
+            do
+            {
+                bool Test = false ;
+                int Prime = Convert.ToInt32(Console.ReadLine());
+                if (1 < Prime && Prime <= 100000) 
+                {
+                    for (int n = (Prime/2) + 1; n > 1 ; n--)
+                    {
+                        
+                        if (Prime%n==0)
+                        {
+                            Console.WriteLine("Your number is not Prime");
+                            Test = true;                        
+                            break;
+                        }
+                        
+
+                    }
+                    if ( Test == false)
+                    {
+                        Console.WriteLine("Prime");
+                    }
+
+
+                }else
+                {
+                    Console.WriteLine("Your number shuld be betwin 2 and 100000. Pleace try again");
+                }                                                       
+            } while (true);
+        }
+    }
+}
