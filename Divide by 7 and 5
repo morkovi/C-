@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("This application check if the written number can be Divided by 7 and 5?");
+            do
+            {
+                int a = Convert.ToInt32(Console.ReadLine());
+                bool b = (a % 7 == 0 && a % 5 == 0);
+                Console.WriteLine(b);
+                
+
+
+            } while (true);
+        }
+    }
+}
